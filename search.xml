@@ -18,4 +18,19 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>单片机实验6.5</title>
+    <url>/2021/05/25/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C6-5/</url>
+    <content><![CDATA[<h2 id="①-P1-0，-10HZ方波"><a href="#①-P1-0，-10HZ方波" class="headerlink" title="① P1.0，  10HZ方波"></a>① P1.0，  10HZ方波</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ORG 0000H</span><br><span class="line">AJMP MAIN</span><br><span class="line">ORG 000BH</span><br><span class="line">AJMP T0</span><br><span class="line">ORG 0100H</span><br><span class="line">MAIN:</span><br><span class="line">MOV TMOD,#01</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">SETB ET0</span><br><span class="line">SETB TR0</span><br><span class="line">SETB EA</span><br><span class="line">SJMP $</span><br><span class="line">T0:</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">CPL P1.0</span><br><span class="line">RETI</span><br><span class="line">END</span><br></pre></td></tr></table></figure>
+
+<h2 id="②P1-0，-周期100ms，-占空比40"><a href="#②P1-0，-周期100ms，-占空比40" class="headerlink" title="②P1.0，  周期100ms，   占空比40%"></a>②P1.0，  周期100ms，   占空比40%</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">RG 0000H</span><br><span class="line">AJMP MAIN</span><br><span class="line">ORG 000BH</span><br><span class="line">AJMP T0</span><br><span class="line">ORG 0100H</span><br><span class="line">MAIN:</span><br><span class="line">MOV SP,#60H</span><br><span class="line">MOV TMOD,#01</span><br><span class="line">SETB P1.0</span><br><span class="line">MOV TH0,#63H</span><br><span class="line">MOV TL0,#0C0H</span><br><span class="line">SETB ET0</span><br><span class="line">SETB TR0</span><br><span class="line">SETB EA</span><br><span class="line">CLR P1.0</span><br><span class="line">MOV R0,#0</span><br><span class="line">SJMP $  </span><br><span class="line">T0:</span><br><span class="line">INC R0</span><br><span class="line">CJNE R0,#1,HIGH</span><br><span class="line">MOV TH0,#15H</span><br><span class="line">MOV TL0,#0A0H</span><br><span class="line">SETB P1.0</span><br><span class="line">MOV R0,#0</span><br><span class="line">JMP EXIT</span><br><span class="line">HIGH:</span><br><span class="line">INC R0</span><br><span class="line">MOV TH0,#63H</span><br><span class="line">MOV TL0,#0C0H</span><br><span class="line">CLR P1.0</span><br><span class="line">EXIT:</span><br><span class="line">RETI</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>单片机</category>
+      </categories>
+      <tags>
+        <tag>单片机实验</tag>
+      </tags>
+  </entry>
 </search>

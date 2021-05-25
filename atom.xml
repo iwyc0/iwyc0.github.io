@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-22T05:28:25.454Z</updated>
+  <updated>2021-05-25T15:28:57.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单片机实验6.5</title>
+    <link href="http://example.com/2021/05/25/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C6-5/"/>
+    <id>http://example.com/2021/05/25/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C6-5/</id>
+    <published>2021-05-25T15:28:57.000Z</published>
+    <updated>2021-05-25T15:28:57.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;①-P1-0，-10HZ方波&quot;&gt;&lt;a href=&quot;#①-P1-0，-10HZ方波&quot; class=&quot;headerlink&quot; title=&quot;① P1.0，  10HZ方波&quot;&gt;&lt;/a&gt;① P1.0，  10HZ方波&lt;/h2&gt;&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="单片机" scheme="http://example.com/categories/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+    
+    <category term="单片机实验" scheme="http://example.com/tags/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

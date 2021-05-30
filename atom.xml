@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-29T03:02:34.000Z</updated>
+  <updated>2021-05-30T00:59:43.017Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ciphey——基于深度网络的(文本)自动解密工具安装及使用</title>
+    <link href="http://example.com/2021/05/29/ciphey/"/>
+    <id>http://example.com/2021/05/29/ciphey/</id>
+    <published>2021-05-29T12:38:19.000Z</published>
+    <updated>2021-05-30T00:59:43.017Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;该能够自动化的进行解码，可以在短时间破解三十多种常见的密码形式。&lt;/p&gt;
+&lt;h2 id=&quot;安装过程：&quot;&gt;&lt;a href=&quot;#安装过程：&quot; class=&quot;headerlink&quot; title=&quot;安装过程：&quot;&gt;&lt;/a&gt;安装过程：&lt;/h2&gt;&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="CRYPTO" scheme="http://example.com/categories/CRYPTO/"/>
+    
+    
+    <category term="CTF" scheme="http://example.com/tags/CTF/"/>
+    
+  </entry>
   
   <entry>
     <title>回溯法</title>

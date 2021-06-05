@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-30T14:03:38.555Z</updated>
+  <updated>2021-06-05T12:10:19.796Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>计算机网络(第7版)谢希仁PPT</title>
+    <link href="http://example.com/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9CPPT/"/>
+    <id>http://example.com/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9CPPT/</id>
+    <published>2021-06-05T12:01:02.000Z</published>
+    <updated>2021-06-05T12:10:19.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;链接：&lt;a href=&quot;https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g&quot;&gt;https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;提取码：iwyc</summary>
+        
+      
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="PPT" scheme="http://example.com/tags/PPT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ciphey——基于深度网络的(文本)自动解密工具安装及使用</title>
     <link href="http://example.com/2021/05/29/ciphey/"/>
     <id>http://example.com/2021/05/29/ciphey/</id>
     <published>2021-05-29T12:38:19.000Z</published>
-    <updated>2021-05-30T14:03:38.555Z</updated>
+    <updated>2021-06-05T11:58:06.654Z</updated>
     
     
       

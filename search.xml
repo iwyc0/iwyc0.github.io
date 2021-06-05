@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ciphey——基于深度网络的(文本)自动解密工具安装及使用</title>
+    <url>/2021/05/29/ciphey/</url>
+    <content><![CDATA[<p>该能够自动化的进行解码，可以在短时间破解几十种常见的密码形式。</p>
+<h2 id="安装过程："><a href="#安装过程：" class="headerlink" title="安装过程："></a>安装过程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">get <span class="built_in">clone</span> https://github.com/Ciphey/Ciphey</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -U ciphey</span><br></pre></td></tr></table></figure>
+
+<p>然后发现了如下错误：</p>
+<p>ERROR: Cannot uninstall ‘PyYAML’. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install ciphey --ignore-installed PyYAML</span><br></pre></td></tr></table></figure>
+
+<p>之后又有如下错误：</p>
+<p><img src="/2021/05/29/ciphey/2.png" alt="ciphey"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -U pip</span><br></pre></td></tr></table></figure>
+
+<p>最后还是有存在以下问题，不知道怎么解决，但工具已经可以正常使用</p>
+<p><img src="/2021/05/29/ciphey/1.png" alt="ciphey"></p>
+<h2 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ciphey -t <span class="string">&quot;iZr2JfFrKxO35rjrpjStcbgiTak&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/05/29/ciphey/3.png" alt="ciphey"></p>
+<p>可以看出这串字符用了base64 base85 base58 reverse atbash进行了加密。</p>
+<p>Ciphey 除了对这种加密字符串的解密，还可以针对整个文本。</p>
+<p>可以使用如下命令，解密 encrypted.txt 文本里所有的内容。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ciphey - encrypted.txt</span><br></pre></td></tr></table></figure>
+
+<p>肥肠滴方便。 </p>
+]]></content>
+      <categories>
+        <category>CRYPTO</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机网络(第7版)谢希仁PPT</title>
+    <url>/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9CPPT/</url>
+    <content><![CDATA[<p>链接：<a href="https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g">https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g</a> </p>
+<p>提取码：iwyc </p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>PPT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>单片机实验6.5</title>
+    <url>/2021/05/25/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C6-5/</url>
+    <content><![CDATA[<h1 id="①-P1-0，-10HZ方波"><a href="#①-P1-0，-10HZ方波" class="headerlink" title="① P1.0，  10HZ方波"></a>① P1.0，  10HZ方波</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ORG 0000H</span><br><span class="line">AJMP MAIN</span><br><span class="line">ORG 000BH</span><br><span class="line">AJMP T0</span><br><span class="line">ORG 0100H</span><br><span class="line">MAIN:</span><br><span class="line">MOV TMOD,#01</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">SETB ET0</span><br><span class="line">SETB TR0</span><br><span class="line">SETB EA</span><br><span class="line">SJMP $</span><br><span class="line">T0:</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">CPL P1.0</span><br><span class="line">RETI</span><br><span class="line">END</span><br></pre></td></tr></table></figure>
+
+<h1 id="②P1-0，-周期100ms，-占空比40"><a href="#②P1-0，-周期100ms，-占空比40" class="headerlink" title="②P1.0，  周期100ms，   占空比40%"></a>②P1.0，  周期100ms，   占空比40%</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">RG 0000H</span><br><span class="line">AJMP MAIN</span><br><span class="line">ORG 000BH</span><br><span class="line">AJMP T0</span><br><span class="line">ORG 0100H</span><br><span class="line">MAIN:</span><br><span class="line">MOV SP,#60H</span><br><span class="line">MOV TMOD,#01</span><br><span class="line">SETB P1.0</span><br><span class="line">MOV TH0,#63H</span><br><span class="line">MOV TL0,#0C0H</span><br><span class="line">SETB ET0</span><br><span class="line">SETB TR0</span><br><span class="line">SETB EA</span><br><span class="line">CLR P1.0</span><br><span class="line">MOV R0,#0</span><br><span class="line">SJMP $  </span><br><span class="line">T0:</span><br><span class="line">INC R0</span><br><span class="line">CJNE R0,#1,HIGH</span><br><span class="line">MOV TH0,#15H</span><br><span class="line">MOV TL0,#0A0H</span><br><span class="line">SETB P1.0</span><br><span class="line">MOV R0,#0</span><br><span class="line">JMP EXIT</span><br><span class="line">HIGH:</span><br><span class="line">INC R0</span><br><span class="line">MOV TH0,#63H</span><br><span class="line">MOV TL0,#0C0H</span><br><span class="line">CLR P1.0</span><br><span class="line">EXIT:</span><br><span class="line">RETI</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>单片机</category>
+      </categories>
+      <tags>
+        <tag>单片机实验</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>回溯法</title>
     <url>/2021/05/29/%E5%9B%9E%E6%BA%AF%E6%B3%95/</url>
     <content><![CDATA[<h1 id="7-20-全排列"><a href="#7-20-全排列" class="headerlink" title="7-20 全排列"></a><strong>7-20 全排列</strong></h1><p>对于1~n这n个不同的数，按照一定的顺序把这n个数排列起来（每个数出现一次，且不重复, n&lt;10），将所有的排列列出，称为全排列。</p>
@@ -45,56 +108,6 @@
       <categories>
         <category>算法</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Ciphey——基于深度网络的(文本)自动解密工具安装及使用</title>
-    <url>/2021/05/29/ciphey/</url>
-    <content><![CDATA[<p>该能够自动化的进行解码，可以在短时间破解几十种常见的密码形式。</p>
-<h2 id="安装过程："><a href="#安装过程：" class="headerlink" title="安装过程："></a>安装过程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">get <span class="built_in">clone</span> https://github.com/Ciphey/Ciphey</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -U ciphey</span><br></pre></td></tr></table></figure>
-
-<p>然后发现了如下错误：</p>
-<p>ERROR: Cannot uninstall ‘PyYAML’. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install ciphey --ignore-installed PyYAML</span><br></pre></td></tr></table></figure>
-
-<p>之后又有如下错误：</p>
-<p><img src="/2021/05/29/ciphey/2.png" alt="ciphey"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -U pip</span><br></pre></td></tr></table></figure>
-
-<p>最后还是有存在以下问题，不知道怎么解决，但工具已经可以正常使用</p>
-<p><img src="/2021/05/29/ciphey/1.png" alt="ciphey"></p>
-<h2 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ciphey -t <span class="string">&quot;iZr2JfFrKxO35rjrpjStcbgiTak&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/2021/05/29/ciphey/3.png" alt="ciphey"></p>
-<p>可以看出这串字符用了base64 base85 base58 reverse atbash进行了加密。</p>
-<p>Ciphey 除了对这种加密字符串的解密，还可以针对整个文本。</p>
-<p>可以使用如下命令，解密 encrypted.txt 文本里所有的内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ciphey - encrypted.txt</span><br></pre></td></tr></table></figure>
-
-<p>肥肠滴方便。</p>
-]]></content>
-      <categories>
-        <category>CRYPTO</category>
-      </categories>
-      <tags>
-        <tag>CTF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>单片机实验6.5</title>
-    <url>/2021/05/25/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C6-5/</url>
-    <content><![CDATA[<h1 id="①-P1-0，-10HZ方波"><a href="#①-P1-0，-10HZ方波" class="headerlink" title="① P1.0，  10HZ方波"></a>① P1.0，  10HZ方波</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ORG 0000H</span><br><span class="line">AJMP MAIN</span><br><span class="line">ORG 000BH</span><br><span class="line">AJMP T0</span><br><span class="line">ORG 0100H</span><br><span class="line">MAIN:</span><br><span class="line">MOV TMOD,#01</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">SETB ET0</span><br><span class="line">SETB TR0</span><br><span class="line">SETB EA</span><br><span class="line">SJMP $</span><br><span class="line">T0:</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">CPL P1.0</span><br><span class="line">RETI</span><br><span class="line">END</span><br></pre></td></tr></table></figure>
-
-<h1 id="②P1-0，-周期100ms，-占空比40"><a href="#②P1-0，-周期100ms，-占空比40" class="headerlink" title="②P1.0，  周期100ms，   占空比40%"></a>②P1.0，  周期100ms，   占空比40%</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">RG 0000H</span><br><span class="line">AJMP MAIN</span><br><span class="line">ORG 000BH</span><br><span class="line">AJMP T0</span><br><span class="line">ORG 0100H</span><br><span class="line">MAIN:</span><br><span class="line">MOV SP,#60H</span><br><span class="line">MOV TMOD,#01</span><br><span class="line">SETB P1.0</span><br><span class="line">MOV TH0,#63H</span><br><span class="line">MOV TL0,#0C0H</span><br><span class="line">SETB ET0</span><br><span class="line">SETB TR0</span><br><span class="line">SETB EA</span><br><span class="line">CLR P1.0</span><br><span class="line">MOV R0,#0</span><br><span class="line">SJMP $  </span><br><span class="line">T0:</span><br><span class="line">INC R0</span><br><span class="line">CJNE R0,#1,HIGH</span><br><span class="line">MOV TH0,#15H</span><br><span class="line">MOV TL0,#0A0H</span><br><span class="line">SETB P1.0</span><br><span class="line">MOV R0,#0</span><br><span class="line">JMP EXIT</span><br><span class="line">HIGH:</span><br><span class="line">INC R0</span><br><span class="line">MOV TH0,#63H</span><br><span class="line">MOV TL0,#0C0H</span><br><span class="line">CLR P1.0</span><br><span class="line">EXIT:</span><br><span class="line">RETI</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>单片机</category>
-      </categories>
-      <tags>
-        <tag>单片机实验</tag>
-      </tags>
   </entry>
   <entry>
     <title>贪心算法</title>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-13T03:47:36.032Z</updated>
+  <updated>2021-06-13T03:52:16.621Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>按顺序提取文件中内容</title>
+    <title>批量提取文件中内容</title>
     <link href="http://example.com/2021/06/13/%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%8F%90%E5%8F%96%E6%96%87%E4%BB%B6%E4%B8%AD%E5%86%85%E5%AE%B9/"/>
     <id>http://example.com/2021/06/13/%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%8F%90%E5%8F%96%E6%96%87%E4%BB%B6%E4%B8%AD%E5%86%85%E5%AE%B9/</id>
     <published>2021-06-13T01:41:05.000Z</published>
-    <updated>2021-06-13T03:47:36.032Z</updated>
+    <updated>2021-06-13T03:52:16.621Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+    <summary type="html">&lt;h4 id=&quot;顺序提取：&quot;&gt;&lt;a href=&quot;#顺序提取：&quot; class=&quot;headerlink&quot; title=&quot;顺序提取：&quot;&gt;&lt;/a&gt;顺序提取：&lt;/h4&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
         
       
     

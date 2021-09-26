@@ -36,6 +36,26 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo常用命令</title>
+    <url>/2021/09/26/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>部署</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>本地</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g #生成</span><br><span class="line"></span><br><span class="line">hexo s #启动本地服务，进行文章预览调试</span><br></pre></td></tr></table></figure>
+
+<p>常用</p>
+<p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #将.deploy目录部署到GitHubhexo help # 查看帮助hexo version #查看Hexo的版本</p>
+<p>复合</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy -g  #生成加部署</span><br><span class="line">hexo server -g  #生成加预览</span><br></pre></td></tr></table></figure>
+
+<p>命令简写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>单片机实验6.5</title>
     <url>/2021/05/25/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C6-5/</url>
     <content><![CDATA[<h1 id="①-P1-0，-10HZ方波"><a href="#①-P1-0，-10HZ方波" class="headerlink" title="① P1.0，  10HZ方波"></a>① P1.0，  10HZ方波</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ORG 0000H</span><br><span class="line">AJMP MAIN</span><br><span class="line">ORG 000BH</span><br><span class="line">AJMP T0</span><br><span class="line">ORG 0100H</span><br><span class="line">MAIN:</span><br><span class="line">MOV TMOD,#01</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">SETB ET0</span><br><span class="line">SETB TR0</span><br><span class="line">SETB EA</span><br><span class="line">SJMP $</span><br><span class="line">T0:</span><br><span class="line">MOV TH0,#3CH</span><br><span class="line">MOV TL0,#0B0H</span><br><span class="line">CPL P1.0</span><br><span class="line">RETI</span><br><span class="line">END</span><br></pre></td></tr></table></figure>
@@ -112,6 +132,19 @@
       </tags>
   </entry>
   <entry>
+    <title>计算机网络(第7版)谢希仁PPT</title>
+    <url>/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9CPPT/</url>
+    <content><![CDATA[<p>链接：<a href="https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g">https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g</a> </p>
+<p>提取码：iwyc </p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>PPT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>贪心算法</title>
     <url>/2021/05/29/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h1 id="7-17-部分背包"><a href="#7-17-部分背包" class="headerlink" title="7-17 部分背包"></a><strong>7-17 部分背包</strong></h1><p>给定 N 种物品和一个背包。物品 i 的重量是 W i ，价值为 V i ；背包的容量为 V。问应如何选择装入背包中的物品，使得装入背包中物品的总价值最大？在选择装入背包的物品，对每种物品可以选择：全部装入或装入部分，且不能重复装入。输入数据的第一行分别为：背包的容量 V，物品的个数 N。接下来的 N 行表示 N 个物品的重量和价值。输出为最大的总价值。</p>
@@ -147,18 +180,5 @@
       <categories>
         <category>算法</category>
       </categories>
-  </entry>
-  <entry>
-    <title>计算机网络(第7版)谢希仁PPT</title>
-    <url>/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9CPPT/</url>
-    <content><![CDATA[<p>链接：<a href="https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g">https://pan.baidu.com/s/1fEARC3Av3Z43IO3Jkwoz4g</a> </p>
-<p>提取码：iwyc </p>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>PPT</tag>
-      </tags>
   </entry>
 </search>
